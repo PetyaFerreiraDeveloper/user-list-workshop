@@ -1,5 +1,5 @@
 // const cors = require('cors');
-const whitelist = ['http://localhost:3000', 'https://user-list-demo-react.herokuapp.com/', 'https://user-list-workshop.vercel.app/'];
+const whitelist = ['http://localhost:3000', 'https://user-list-demo-react.herokuapp.com/', 'http://localhost:3005','https://user-list-workshop.vercel.app/'];
 
 module.exports = (app, express) => {
   app.use(express.static('public'));

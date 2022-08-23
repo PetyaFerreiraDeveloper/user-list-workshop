@@ -4,6 +4,7 @@ const path = require('path');
 
 const db = require('./config/db');
 const { port, dbConnection } = require('./config/config');
+const testPort = 'https://user-list-workshop.vercel.app/';
 
 const allowed = ['.js', '.css', '.png', '.jpg', '.jpeg', '.ico'];
 
@@ -22,7 +23,7 @@ const start = async () => {
       }
     });
     console.log('*** >>> Database is connected <<< ***');
-    app.listen(port, () => console.log(`Server is listening on port: ${port}`));
+    app.listen(testPort, () => console.log(`Server is listening on port: ${testPort}`));
   } catch (error) {
     console.error('!!! >>> Database is not connected <<< !!!\nError:', error.message);
   }
