@@ -1,3 +1,5 @@
-# user-list-workshop
+React App which uses MongoDb to create a list of users.
+you can add, delete or edit users
 
-trying to deploy fullstack project on vercel
+To start the project use:
+npm start
